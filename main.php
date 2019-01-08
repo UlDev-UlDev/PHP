@@ -31,18 +31,12 @@ do {
 print "Prenom : ";
 $p = fgets(STDIN);
     $p = str_replace("\n","",$p); 
-    $p = str_replace("\r","",$p); 
-    $p = str_replace("\t","",$p);
 print "Nom : ";
 $n = fgets(STDIN);
     $n = str_replace("\n","",$n); 
-    $n = str_replace("\r","",$n); 
-    $n = str_replace("\t","",$n);
 print "Age : ";
 $a = fgets(STDIN);
     $a = str_replace("\n","",$a); 
-    $a = str_replace("\r","",$a); 
-    $a = str_replace("\t","",$a);
 
 $personnes['personne_'. $i] = array('nom' => $n ,'prenom' => $p ,'age' => $a);
 $i = $i +1;
