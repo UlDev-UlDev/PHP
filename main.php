@@ -23,6 +23,18 @@
     ]
 ];
 
+
+print "Prenom : ";
+$p = fgets(STDIN);
+print "Nom : ";
+$n = fgets(STDIN);
+print "Age : ";
+$a = fgets(STDIN);
+
+$personnes['personne_5'] = array('nom' => $n ,'prenom' => $p ,'age' => $a);
+
+echo "\n";
+
 foreach($personnes as $element)
 {
     if ($element['age'] > 18) {
